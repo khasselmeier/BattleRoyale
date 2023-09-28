@@ -66,4 +66,10 @@ public class CameraController : MonoBehaviour
             transform.parent.rotation = Quaternion.Euler(0, rotX, 0);
         }
     }
+
+    public void SetAsSpectator()
+    {
+        isSpectator = true;
+        transform.parent = null;
+    }
 }
